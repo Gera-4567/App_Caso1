@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistroActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Registro"
+            android:textSize="50sp"
+            android:textAlignment="center"
+            android:layout_margin="10dp"
+            android:textStyle="bold"
+            android:textColor="#000" />
+
+        <EditText
+            android:id="@+id/et_nom_usu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="Nombre(s)"
+            android:layout_gravity="center"
+            android:textSize="25sp"
+            android:layout_marginTop="20dp"
+            android:textAlignment="center"/>
+
+        <EditText
+            android:id="@+id/et_ap1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="Apellido Paterno"
+            android:layout_gravity="center"
+            android:textSize="25sp"
+            android:layout_marginTop="20dp"
+            android:textAlignment="center"/>
+
+        <EditText
+            android:id="@+id/et_ap2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="Apellido Materno"
+            android:layout_gravity="center"
+            android:textSize="25sp"
+            android:layout_marginTop="20dp"
+            android:textAlignment="center"/>
+
+        <EditText
+            android:id="@+id/et_corr_usu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:hint="Correo Electrónico (CEA)"
+            android:layout_gravity="center"
+            android:textSize="25sp"
+            android:layout_marginTop="20dp"
+            android:textAlignment="center"/>
+
+        <EditText
+            android:id="@+id/et_pass_usu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="Contraseña"
+            android:layout_gravity="center"
+            android:textSize="25sp"
+            android:layout_marginTop="20dp"
+            android:textAlignment="center"/>
+
+        <Button
+            android:id="@+id/btn_registro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Registrarse"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            android:padding="20dp" />
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¿Ya tienes cuenta?, Inicia Sesión"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            android:onClick="login"
+            android:padding="20dp" />
+
+        <ProgressBar
+            android:id="@+id/pb_sesion"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:indeterminate="true"
+            android:layout_marginTop="15dp"/>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
